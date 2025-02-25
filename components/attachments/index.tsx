@@ -125,8 +125,7 @@ function Attachments(props: AttachmentsProps, ref: React.Ref<AttachmentsRef>) {
     onChange: triggerChange,
   };
 
-  const onItemRemove = (item: Attachment) => {
-    let currentFile: Attachment;
+  const onItemRemove = (item: Attachment) =>
     Promise.resolve(typeof onRemove === 'function' ? onRemove(item) : onRemove).then((ret) => {
       // Prevent removing file
       if (ret === false) {
@@ -135,17 +134,11 @@ function Attachments(props: AttachmentsProps, ref: React.Ref<AttachmentsRef>) {
 
       const newFileList = fileList.filter((fileItem) => fileItem.uid !== item.uid);
 
-      if (newFileList) {
-        currentFile = { ...item, status: 'removed' };
-
-        triggerChange({
-          file: currentFile,
-          fileList: newFileList,
-        });
-      }
+      triggerChange({
+        file: { ...item, status: 'removed' },
+        fileList: newFileList,
+      });
     });
-  };
-
   // ============================ Render ============================
   let renderChildren: React.ReactElement;
 
