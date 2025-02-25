@@ -65,6 +65,7 @@ function Attachments(props: AttachmentsProps, ref: React.Ref<AttachmentsRef>) {
     getDropContainer,
     placeholder,
     onChange,
+    onRemove,
     overflow,
     disabled,
     classNames = {},
@@ -125,10 +126,23 @@ function Attachments(props: AttachmentsProps, ref: React.Ref<AttachmentsRef>) {
   };
 
   const onItemRemove = (item: Attachment) => {
-    const newFileList = fileList.filter((fileItem) => fileItem.uid !== item.uid);
-    triggerChange({
-      file: item,
-      fileList: newFileList,
+    let currentFile: Attachment;
+    Promise.resolve(typeof onRemove === 'function' ? onRemove(item) : onRemove).then((ret) => {
+      // Prevent removing file
+      if (ret === false) {
+        return;
+      }
+
+      const newFileList = fileList.filter((fileItem) => fileItem.uid !== item.uid);
+
+      if (newFileList) {
+        currentFile = { ...item, status: 'removed' };
+
+        triggerChange({
+          file: currentFile,
+          fileList: newFileList,
+        });
+      }
     });
   };
 
