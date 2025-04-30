@@ -6,6 +6,7 @@ exports[`Conversations Component Conversations component work 1`] = `
 >
   <li
     class="ant-conversations-item"
+    title="What is Ant Design X ?"
   >
     <div
       class="ant-conversations-icon"
@@ -17,17 +18,17 @@ exports[`Conversations Component Conversations component work 1`] = `
       </div>
     </div>
     <span
-      aria-label="What is Ant Design X ?"
-      class="ant-typography ant-typography-ellipsis ant-conversations-label"
+      class="ant-typography ant-conversations-label"
     >
       What is Ant Design X ?
     </span>
   </li>
   <li
     class="ant-conversations-item"
+    title="[object Object]"
   >
     <span
-      class="ant-typography ant-typography-ellipsis ant-conversations-label"
+      class="ant-typography ant-conversations-label"
     >
       <div>
         Getting Started:
@@ -43,30 +44,30 @@ exports[`Conversations Component Conversations component work 1`] = `
   </li>
   <li
     class="ant-conversations-item"
+    title="In Docker, use 🐑 Ollama and initialize"
   >
     <span
-      aria-label="In Docker, use 🐑 Ollama and initialize"
-      class="ant-typography ant-typography-ellipsis ant-conversations-label"
+      class="ant-typography ant-conversations-label"
     >
       In Docker, use 🐑 Ollama and initialize
     </span>
   </li>
   <li
     class="ant-conversations-item ant-conversations-item-disabled"
+    title="Expired, please go to the recycle bin to check"
   >
     <span
-      aria-label="Expired, please go to the recycle bin to check"
-      class="ant-typography ant-typography-ellipsis ant-conversations-label"
+      class="ant-typography ant-conversations-label"
     >
       Expired, please go to the recycle bin to check
     </span>
   </li>
   <li
     class="ant-conversations-item ant-conversations-item-disabled"
+    title="No key"
   >
     <span
-      aria-label="No key"
-      class="ant-typography ant-typography-ellipsis ant-conversations-label"
+      class="ant-typography ant-conversations-label"
     >
       No key
     </span>
@@ -93,6 +94,7 @@ exports[`Conversations Component rtl render component should be rendered correct
     >
       <li
         class="ant-conversations-item"
+        title="What is Ant Design X ?"
       >
         <div
           class="ant-conversations-icon"
@@ -104,8 +106,7 @@ exports[`Conversations Component rtl render component should be rendered correct
           </div>
         </div>
         <span
-          aria-label="What is Ant Design X ?"
-          class="ant-typography ant-typography-rtl ant-typography-ellipsis ant-conversations-label"
+          class="ant-typography ant-typography-rtl ant-conversations-label"
         >
           What is Ant Design X ?
         </span>
@@ -141,9 +142,10 @@ exports[`Conversations Component rtl render component should be rendered correct
     >
       <li
         class="ant-conversations-item"
+        title="[object Object]"
       >
         <span
-          class="ant-typography ant-typography-rtl ant-typography-ellipsis ant-conversations-label"
+          class="ant-typography ant-typography-rtl ant-conversations-label"
         >
           <div>
             Getting Started:
@@ -179,10 +181,10 @@ exports[`Conversations Component rtl render component should be rendered correct
       </li>
       <li
         class="ant-conversations-item"
+        title="In Docker, use 🐑 Ollama and initialize"
       >
         <span
-          aria-label="In Docker, use 🐑 Ollama and initialize"
-          class="ant-typography ant-typography-rtl ant-typography-ellipsis ant-conversations-label"
+          class="ant-typography ant-typography-rtl ant-conversations-label"
         >
           In Docker, use 🐑 Ollama and initialize
         </span>
@@ -209,20 +211,20 @@ exports[`Conversations Component rtl render component should be rendered correct
       </li>
       <li
         class="ant-conversations-item ant-conversations-item-disabled"
+        title="Expired, please go to the recycle bin to check"
       >
         <span
-          aria-label="Expired, please go to the recycle bin to check"
-          class="ant-typography ant-typography-rtl ant-typography-ellipsis ant-conversations-label"
+          class="ant-typography ant-typography-rtl ant-conversations-label"
         >
           Expired, please go to the recycle bin to check
         </span>
       </li>
       <li
         class="ant-conversations-item ant-conversations-item-disabled"
+        title="No key"
       >
         <span
-          aria-label="No key"
-          class="ant-typography ant-typography-rtl ant-typography-ellipsis ant-conversations-label"
+          class="ant-typography ant-typography-rtl ant-conversations-label"
         >
           No key
         </span>
